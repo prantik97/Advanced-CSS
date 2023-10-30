@@ -1,0 +1,22 @@
+.outer {
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    border: 3px solid black;
+}
+.loader {
+    width: 60px;
+    height: 60px;
+    border: 7px solid grey;
+    border-top-color: blue;
+    border-radius: 50%;
+    animation: load 0.75s ease infinite;
+}
+
+@keyframes load {
+    from {transform: rotate(0turn);}
+    to {transform: rotate(1turn);}
+}
